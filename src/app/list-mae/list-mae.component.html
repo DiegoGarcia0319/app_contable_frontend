@@ -1,0 +1,16 @@
+<p>list-mae works!</p>
+
+<p class="p-m-t" *ngIf="maes.length === 0">Listado Maestro de Cuentas vacio </p>
+
+<mat-card *ngFor="let item of maes">
+  <mat-card-title>{{ item.codigo }}</mat-card-title>
+  <mat-card-subtitle>{{ item.nombre }}</mat-card-subtitle>
+
+  <mat-card-actions align="end">
+    <button mat-stroked-button color="primary" [routerLink]="['/edit', item.id]">EDITAR</button>
+
+    <button mat-button color="warn" (click)="onDelete(item.id)">ELIMINAR</button>
+
+  </mat-card-actions>
+
+</mat-card>

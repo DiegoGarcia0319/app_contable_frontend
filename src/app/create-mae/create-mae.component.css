@@ -1,0 +1,9 @@
+mat-form-field,
+input {
+  width: 100%;
+}
+
+form {
+  margin-top: 2rem; /* 1rem = medida estandar equivalente a 16pixeles */
+  margin-bottom: 2rem; /* margen en la parte baja de este componente */
+}
